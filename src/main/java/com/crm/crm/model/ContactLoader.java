@@ -16,6 +16,6 @@ public class ContactLoader implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    this.repository.save(new Contact(args[0], args[1], args[2]));
+    this.repository.save(new Contact("dan", "ram", "a@a.com"));
   }
 }
